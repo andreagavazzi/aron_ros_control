@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(interbotix_xsarm_ros_control)
+project(aron_ros_control)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  interbotix_xsarm_control
+  aron_control
   interbotix_xs_ros_control
 )
 
@@ -18,5 +18,5 @@ find_package(catkin REQUIRED COMPONENTS
 ## The catkin_package macro generates cmake config files for your package
 ## Declare things to be passed to dependent projects
 catkin_package(
- CATKIN_DEPENDS interbotix_xsarm_control interbotix_xs_ros_control
+ CATKIN_DEPENDS aron_control interbotix_xs_ros_control
 )
