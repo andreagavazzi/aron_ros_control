@@ -20,7 +20,7 @@ This package is not meant to be used by itself but included in a launch file wit
 To run this package, type the line below in a terminal with the appropriate arguments.
 
 ```
-roslaunch interbotix_xsarm_ros_control xsarm_ros_control.launch robot_model:=px150
+roslaunch interbotix_xsarm_ros_control xsarm_ros_control.launch
 ```
 
 This is the bare minimum needed to get up and running. Take a look at the table below to see how to
