@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>interbotix_xsarm_ros_control</name>
+  <name>aron_ros_control</name>
   <version>0.0.0</version>
-  <description>The interbotix_xsarm_ros_control package</description>
-  <maintainer email="trsupport@trossenrobotics.com">Solomon Wiznitzer</maintainer>
+  <description>The aron_ros_control package</description>
+  <maintainer email="andrea.gavazzi@me.com">Andrea Gavazzi</maintainer>
   <license>BSD</license>
-  <!-- <url type="website">http://wiki.ros.org/interbotix_xsarm_ros_control</url> -->
-  <author email="solomon@trossenrobotics.com">Solomon Wiznitzer</author>
+  <!-- <url type="website">http://wiki.ros.org</url> -->
+  <author email="andrea.gavazzi@me.com">Andrea Gavazzi</author>
 
   <!-- The *depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>interbotix_xsarm_control</build_depend>
+  <build_depend>aron_control</build_depend>
   <build_depend>interbotix_xs_ros_control</build_depend>
-  <build_export_depend>interbotix_xsarm_control</build_export_depend>
-  <build_export_depend>interbotix_xs_ros_control</build_export_depend>
-  <exec_depend>interbotix_xsarm_control</exec_depend>
+  <build_export_depend>aron_control</build_export_depend>
+  <build_export_depend>aron_ros_control</build_export_depend>
+  <exec_depend>aron_control</exec_depend>
   <exec_depend>interbotix_xs_ros_control</exec_depend>
 
   <!-- The export tag contains other, unspecified, tags -->
