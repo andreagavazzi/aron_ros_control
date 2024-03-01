@@ -1,5 +1,4 @@
 hardware_interface:
   loop_hz: 10
-  group_name: arm
-  gripper_name: gripper
+  group_name: head
   joint_states_topic: joint_states
