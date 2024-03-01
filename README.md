@@ -5,7 +5,7 @@ It essentially takes in Joint Trajectory commands from MoveIt (via the FollowJoi
 
 ## Structure
 
-TODO: PIC
+<img align="center" src="https://github.com/andreagavazzi/aron_ros_control/blob/main/aron_ros_control.svg"/> 
 
 As explained in the Overview, this package builds on top of the `aron_control` package (which starts the xs_sdk node), and is typically used in conjunction with the `aron_xsarm_moveit` package. To get familiar with the nodes in those packages, feel free to
 look at their READMEs. The other nodes are described below:
