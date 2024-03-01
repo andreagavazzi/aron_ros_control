@@ -7,13 +7,12 @@
   <arg name="use_world_frame"                   default="true"/>
   <arg name="external_urdf_loc"                 default=""/>
   <arg name="use_rviz"                          default="false"/>
-  <arg name="mode_configs"                      default="$(find interbotix_xsarm_ros_control)/config/modes.yaml"/>
-  <arg name="dof"                               default="5"/>
+  <arg name="mode_configs"                      default="$(find aron_ros_control)/config/modes.yaml"/>
+ 
+  <rosparam file="$(find aron_ros_control)/config/head_controller.yaml" command="load" ns="$(arg robot_name)"/>
+  <rosparam file="$(find aron_ros_control)/config/hardware.yaml" command="load" ns="$(arg robot_name)"/>
 
-  <rosparam file="$(find interbotix_xsarm_ros_control)/config/$(arg dof)dof_controllers.yaml" command="load" ns="$(arg robot_name)"/>
-  <rosparam file="$(find interbotix_xsarm_ros_control)/config/hardware.yaml" command="load" ns="$(arg robot_name)"/>
-
-  <include file="$(find interbotix_xsarm_control)/launch/xsarm_control.launch">
+  <include file="$(find aron_control)/launch/aron_control.launch">
     <arg name="robot_model"                       value="$(arg robot_model)"/>
     <arg name="robot_name"                        value="$(arg robot_name)"/>
     <arg name="base_link_frame"                   value="$(arg base_link_frame)"/>
@@ -31,12 +30,12 @@
     respawn="false"
     output="screen"
     ns="$(arg robot_name)"
-    args="spawn arm_controller gripper_controller">
+    args="spawn head_controller">
   </node>
 
   <node
     name="xs_hardware_interface"
-    pkg="interbotix_xs_ros_control"
+    pkg="aron_ros_control"
     type="xs_hardware_interface"
     output="screen"
     ns="$(arg robot_name)">
