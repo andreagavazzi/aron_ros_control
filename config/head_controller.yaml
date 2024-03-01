@@ -1,0 +1,8 @@
+head_controller:
+  type: position_controllers/JointTrajectoryController
+  joints:
+    - pan_joint
+    - tilt_joint
+  constraints:
+    goal_time: 1
+    stopped_velocity_tolerance: 0.02
